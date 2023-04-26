@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="myntra">
+<groups>
+<run>
+<include name="smoke"></include>
+</run>
+
+</groups>
+
+  <test thread-count="5" name="Categories">
+  <groups>
+  <run>
+  <include name="regrression"></include>
+  
+  </run>
+  </groups>
+    <classes>
+      <class name="Categories.Men"> </class>
+      <class name="Categories.Women"> </class>
+    </classes>
+  </test> <!-- Categories -->
+  
+   <test name="Payments">
+   
+     <classes>
+     
+       <class name="Payments.NetBanking"></class>
+       
+       <class name="Payments.Upi"> </class>
+     
+     
+     
+     </classes><!-- Upi-->
+   </test><!-- Payment-->
+</suite> <!-- Suite -->
